@@ -19,16 +19,16 @@ namespace Lab12
             RandomPlayer rndm = new RandomPlayer();
 
 
-            Console.WriteLine("Welcome to Rock Paper Scissors!\n");
+            Console.WriteLine("Welcome to Rock Paper Scissors! Still in Beta Mode!\n");
             Console.WriteLine("Enter your name: ");
             string userName = Console.ReadLine();
             Console.WriteLine("\nWho would you like to play? Rocky or Jokester?");
             Console.WriteLine("Enter R or J: ");
-            choice = Console.ReadLine();
+            choice = ValidateConsoleInput.GetValidStringPlayerChoice();
 
             if (choice == "r")
             {
-                output1 = user.GetRoshambo(); //assigning a value from the human player method, now need to do method or if else statement for who wins
+                output1 = user.GetRoshambo(); //assigning a value from the human player method
                 output2 = rck.GetRoshambo();
                 Console.WriteLine($"{userName}: {output1}");
                 Console.WriteLine($"Rocky: {output2}");
@@ -37,6 +37,8 @@ namespace Lab12
             {
                 output1 = user.GetRoshambo();
                 output2 = rndm.GetRoshambo();
+                Console.WriteLine($"{userName}: {output1}");
+                Console.WriteLine($"Jokester: {output2}");
             }
 
 
