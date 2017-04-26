@@ -11,7 +11,7 @@ namespace Lab12
         public override string GetRoshambo()
         {
             Random rPS = new Random();
-            int outcome = rPS.Next(1, 3);
+            int outcome = rPS.Next(1, 4);
             if (outcome == 1)
                 return "Rock";
             else if (outcome == 2)

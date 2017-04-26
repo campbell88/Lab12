@@ -47,7 +47,10 @@ namespace Lab12
 
             if (input.ToLower() == "n")
             {
+                Matrix.Run();
+
                 return false;
+                 
             }
             else if (input.ToLower() == "y")
             {

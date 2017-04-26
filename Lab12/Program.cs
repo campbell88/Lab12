@@ -21,7 +21,7 @@ namespace Lab12
                 RandomPlayer rndm = new RandomPlayer();
 
 
-                Console.WriteLine("Welcome to Rock Paper Scissors! Still in Beta Mode!\n");
+                Console.WriteLine("Welcome to Rock Paper Scissors!\n");
                 Console.WriteLine("Enter your name: ");
                 string userName = Console.ReadLine();
                 Console.WriteLine("\nWho would you like to play? Rocky or Jokester?");
