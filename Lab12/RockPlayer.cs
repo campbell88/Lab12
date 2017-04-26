@@ -10,7 +10,7 @@ namespace Lab12
     {
         public override string GetRoshambo()
         {
-            string rock = "Rock!";
+            string rock = "Rock";
             return rock;
         }
     }
