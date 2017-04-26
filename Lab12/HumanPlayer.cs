@@ -11,13 +11,13 @@ namespace Lab12
         public override string GetRoshambo()
         {
             Console.WriteLine("Okay, Rock, Paper or Scissors? Enter R/P/S: ");
-            string input = Console.ReadLine();
+            string input = ValidateConsoleInput.GetValidStringRPS();
             if (input == "r")
-                return "rock";
+                return "Rock";
             else if (input == "p")
-                return "paper";
+                return "Paper";
             else
-                return "scissors";
+                return "Scissors";
 
         }
 
